@@ -16,7 +16,7 @@
 <%@include file="common/nav.jsp" %>
 
 <%-- MAIN --%>
-<div class="layout">
+<div class="container">
 
     <%-- 피드 --%>
     <div class="feed">

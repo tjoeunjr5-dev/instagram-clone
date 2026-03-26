@@ -5,6 +5,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+확장자 별 파일 명칭
+파스칼케이스(시작하는단어 기준 대문자) : .java
+카멜케이스(ABC)                       : .java 내부에 있는 변수 명칭에서 사용
+스네이크케이스(_) : .jsp .html
+케밥케이스   (-) :  .css .js .xml  폴더명 클래스와 아이디, name 명칭 또한 사용
+
+모든 단어를 대문자로 사용 -> 상수 처럼 변하는 데이터가 없을 때만 사용
+ */
 
 @Controller
 @RequiredArgsConstructor
@@ -28,6 +37,11 @@ public class ViewController {
     @GetMapping("/user/mypage")
     public String myPageView(){
         return "user/mypage";
+    }
+
+    @GetMapping("/map")
+    public String kakaoMapView(){
+        return "kakao-map";
     }
 
     @GetMapping("/board/list")
