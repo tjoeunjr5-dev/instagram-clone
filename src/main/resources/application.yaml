@@ -44,7 +44,9 @@ jwt:
   refresh-expiry: 1209600000
 
 
-
+kakao:
+  client-id: 7881146bcaadefd8b28158468c79f279
+  redirect-uri: http://localhost:8080/api/kakao/callback
 
 
 

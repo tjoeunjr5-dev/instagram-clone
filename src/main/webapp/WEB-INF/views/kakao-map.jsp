@@ -55,7 +55,6 @@
     //  forEach 문은 목록들을 0번 째 부터 끝번째까지 순회
 
     locations.forEach((loc, idx) => {
-        console.log("현재 log : ", loc); // locations 을 순회해서 loc 안에 1번 부터 5번까지 모두다 조회가 되는지 확인
         const item = document.createElement("div");
         item.className = "place-item";
         item.id = "place-" + loc.id;
@@ -67,11 +66,9 @@
             <div class="place-name">${loc.name}</div>
             <div class="place-desc">${loc.desc}</div>
         </div>
-
         `;
         item.addEventListener("click", () => 마커이동(idx));
         장소들.appendChild(item);
-        console.log("appendChild 완료 : ", item);
     });
 
     // =====================================================
