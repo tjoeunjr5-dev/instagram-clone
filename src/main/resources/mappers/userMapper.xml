@@ -22,6 +22,6 @@
     </select>
     <select id="모든회원조회" parameterType="com.project.instagramclone.model.dto.User">
         SELECT *
-        FROM users;
+        FROM users
     </select>
 </mapper>

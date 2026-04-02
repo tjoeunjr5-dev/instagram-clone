@@ -14,7 +14,7 @@
         <div id="검색창"
              class="nav-search-wrapper">
             <div class="nav-search-box">
-                <span class="nav-search-icon">검색아이콘</span>
+                <span class="nav-search-icon">🔎</span>
                 <input id="검색입력"
                        class="nav-search-input"
                        type="text"
@@ -41,8 +41,8 @@
                 <c:when test="${not empty loginUser}">
                     <a href="/user/profile">
                         <c:choose>
-                            <c:when test="${not empty loginUser.profile_img}">
-                                <img class="nav-avatar" src="${loginUser.profile_img}" alt="프로필">
+                            <c:when test="${not empty loginUser.profileImg}">
+                                <img class="nav-avatar" src="${loginUser.profileImg}" alt="프로필">
                             </c:when>
                             <c:otherwise>
                                 <span class="nav-icon">👤</span>
@@ -51,7 +51,7 @@
                     </a>
                 </c:when>
                 <c:otherwise>
-                    <a href="/user/login" class="nav-login">로그인</a>
+                    <a href="/login" class="nav-login">로그인</a>
                 </c:otherwise>
             </c:choose>
         </div>

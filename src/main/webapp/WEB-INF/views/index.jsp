@@ -36,8 +36,8 @@
                 <div class="story">
                     <div class="story-ring">
                         <c:choose>
-                            <c:when test="${not empty story.user.profile_img}">
-                                <img class="story-avatar" src="${story.user.profile_img}" alt="${story.user.name}">
+                            <c:when test="${not empty story.user.profileImg}">
+                                <img class="story-avatar" src="${story.user.profileImg}" alt="${story.user.name}">
                             </c:when>
                             <c:otherwise>
                                 <div class="story-avatar">👤</div>
@@ -86,8 +86,8 @@
                         <div class="post-header">
                             <div class="post-avatar-ring">
                                 <c:choose>
-                                    <c:when test="${not empty post.user.profile_img}">
-                                        <img class="post-avatar" src="${post.user.profile_img}" alt="">
+                                    <c:when test="${not empty post.user.profileImg}">
+                                        <img class="post-avatar" src="${post.user.profileImg}" alt="">
                                     </c:when>
                                     <c:otherwise>
                                         <div class="post-avatar">👤</div>
@@ -162,8 +162,8 @@
                 <div class="sidebar-profile">
                     <div class="sidebar-avatar-ring">
                         <c:choose>
-                            <c:when test="${not empty loginUser.profile_img}">
-                                <img class="sidebar-avatar" src="${loginUser.profile_img}" alt="프로필">
+                            <c:when test="${not empty loginUser.profileImg}">
+                                <img class="sidebar-avatar" src="${loginUser.profileImg}" alt="프로필">
                             </c:when>
                             <c:otherwise>
                                 <div class="sidebar-avatar">👤</div>
@@ -199,8 +199,8 @@
                     <div class="suggest">
                         <div class="suggest-avatar">
                             <c:choose>
-                                <c:when test="${not empty suggest.profile_img}">
-                                    <img src="${suggest.profile_img}" alt="${suggest.name}">
+                                <c:when test="${not empty suggest.profileImg}">
+                                    <img src="${suggest.profileImg}" alt="${suggest.name}">
                                 </c:when>
                                 <c:otherwise>👤</c:otherwise>
                             </c:choose>
