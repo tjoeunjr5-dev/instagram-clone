@@ -100,4 +100,9 @@ public class UserService {
         if (!passwordEncoder.matches(password, user.getPassword())) return null;
         return user;
     }
+
+    public List<User> 유저명검색(String keyword) {
+        String at지운키워드 = keyword.replace("@","");
+        return userMapper.유저명검색(at지운키워드);
+    }
 }
